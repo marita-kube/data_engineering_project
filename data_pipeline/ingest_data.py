@@ -1,6 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from tqdm.auto import tqdm
+import click
 
 dtype = {
     "VendorID": "Int64",
@@ -74,7 +75,7 @@ def main():
     pg_pass = 'root'
     pg_host = 'localhost'
     pg_port = '5432'
-    pg_db = 'ny_taxi'
+    pg_db = 'new_york_taxi'
     year = 2021
     month = 1
     chunksize = 100000
