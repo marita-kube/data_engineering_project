@@ -13,7 +13,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: new_york_taxi_table
+      POSTGRES_DB: new_york_taxi
     ports:
       - "5432:5432"
     volumes:
@@ -85,4 +85,3 @@ services:
     depends_on:
       kestra_postgres:
         condition: service_started
-    
